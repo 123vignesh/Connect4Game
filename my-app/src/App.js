@@ -28,7 +28,7 @@ while(rR < 5 && cR < 6){
 }
 
 while( rR >= 3 && cR >= 3){
-  if(c[rR][cR] == val && c[rR-1][cR-1] == val && c[rR-2][cR-2] == val && c[rR-3][cR-3] == val){
+  if(c[rR][cR] === val && c[rR-1][cR-1] === val && c[rR-2][cR-2] === val && c[rR-3][cR-3] === val){
       return 1
   }
   rR--
@@ -44,7 +44,7 @@ while(rL < 5 && cL > 0){
 }
 
 while(rL >= 3 && cL <= 3){
-  if(c[rL][cL] == val && c[rL-1][cL+1] == val && c[rL-2][cL+2] == val && c[rL-3][cL+3] == val){
+  if(c[rL][cL] === val && c[rL-1][cL+1] === val && c[rL-2][cL+2] === val && c[rL-3][cL+3] === val){
       return 1
   }
   rL--
@@ -58,7 +58,7 @@ var i = 6;
 var val = this.state.player? 2:1;
 
 while( i >= 3){
-  if(c[row][i] == val && c[row][i-1] == val && c[row][i-2] == val && c[row][i-3] == val){
+  if(c[row][i] === val && c[row][i-1] === val && c[row][i-2] === val && c[row][i-3] === val){
       return 1
   }
   i--
@@ -71,7 +71,7 @@ var i = row;
 var val = this.state.player? 2: 1;
 
 if(i >= 3){
-  if(c[i][col] == val && c[i - 1][col] == val && c[i - 2][col] == val && c[i - 3][col] == val){
+  if(c[i][col] === val && c[i - 1][col] === val && c[i - 2][col] === val && c[i - 3][col] === val){
       return 1
   }
 }
