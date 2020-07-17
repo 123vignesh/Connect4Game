@@ -1,0 +1,13 @@
+.Bapp{
+    display:flex;
+}
+.App{
+    align-content: center;
+    margin-bottom: 0;
+}
+
+button{
+  margin-left: 50px;
+margin-bottom: 40px;
+margin-top: 0;
+}
